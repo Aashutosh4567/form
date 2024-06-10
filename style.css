@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > img {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+}
+
+.field > div {
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.field > div > input {
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.left-div {
+  width: 10rem;
+  text-align: left;
+}
+
+button {
+  text-align: center;
+  margin-left: 8rem;
+  padding: 8px 15px 8px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 100;
+  font-size: large;
+  cursor: pointer;
+}
